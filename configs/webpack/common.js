@@ -4,6 +4,7 @@ const { CheckerPlugin } = require("awesome-typescript-loader");
 const StyleLintPlugin = require("stylelint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const DotenvPlugin = require("webpack-dotenv-plugin");
 
 module.exports = {
     resolve: {
@@ -50,6 +51,10 @@ module.exports = {
         new CheckerPlugin(),
         new StyleLintPlugin(),
         new HtmlWebpackPlugin({ template: "index.html.ejs" }),
+        new DotenvPlugin({
+            sample: "./.env.sample",
+            path: "./.env",
+        }),
     ],
     externals: {
         react: "React",
