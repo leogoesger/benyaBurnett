@@ -1,14 +1,8 @@
 {
-    "name": "react-webpack-typescript-starter",
+    "name": "bernett",
     "version": "0.1.0",
     "description": "",
-    "keywords": [
-        "react",
-        "webpack 4",
-        "typescript",
-        "starter",
-        "boilerplate"
-    ],
+    "keywords": [],
     "author": "Leo",
     "license": "MIT",
     "scripts": {
