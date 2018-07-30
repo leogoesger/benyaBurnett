@@ -172,3 +172,29 @@ li {
     height: 300px;
     width: 100%;
 }
+
+#root {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: "Helvetica";
+}
+
+.nav-links {
+    border-bottom: solid;
+    border-bottom-color: #827717;
+    border-bottom-width: 1px;
+    height: 22px;
+    padding: 4px 0px 2px 30px;
+}
+.nav-links a {
+    color: #e0e0e0;
+    font-size: 13px;
+    font-family: Helvetica;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #9e9e9e;
+}

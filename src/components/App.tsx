@@ -6,9 +6,18 @@ import { Navbar } from "../containers";
 
 const App = () => (
     <Router>
-        <div>
-            <Navbar />
-            <Route exact path="/" component={HomeLayout} />
+        <div
+            style={{
+                display: "flex",
+                width: "1200px",
+                justifyContent: "space-between",
+            }}
+        >
+            <Route exact path="*" component={Navbar} />
+            <div>
+                <Route exact path="/" component={HomeLayout} />
+                <Route exact path="/abc" component={HomeLayout} />
+            </div>
         </div>
     </Router>
 );
