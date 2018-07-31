@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import HomeLayout from "./home/HomeLayout";
 import { Navbar } from "../containers";
+import Footer from "./footer/Footer";
 
 const App = () => (
     <Router>
@@ -11,13 +12,15 @@ const App = () => (
                 display: "flex",
                 width: "1200px",
                 justifyContent: "space-between",
+                position: "relative",
             }}
         >
             <Route exact path="*" component={Navbar} />
-            <div>
+            <div style={{ width: "950px" }}>
                 <Route exact path="/" component={HomeLayout} />
                 <Route exact path="/abc" component={HomeLayout} />
             </div>
+            <Footer />
         </div>
     </Router>
 );
