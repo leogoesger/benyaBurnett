@@ -1,8 +1,7 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import HomeLayout from "./home/HomeLayout";
-import { Navbar } from "../containers";
+import { Home, Navbar } from "../containers";
 import Footer from "./footer/Footer";
 
 const App = () => (
@@ -13,12 +12,13 @@ const App = () => (
                 width: "1200px",
                 justifyContent: "space-between",
                 position: "relative",
+                overflow: "scroll",
             }}
         >
-            <Route exact path="*" component={Navbar} />
+            <Navbar />
             <div style={{ width: "950px" }}>
-                <Route exact path="/" component={HomeLayout} />
-                <Route exact path="/abc" component={HomeLayout} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/abc" component={Home} />
             </div>
             <Footer />
         </div>
