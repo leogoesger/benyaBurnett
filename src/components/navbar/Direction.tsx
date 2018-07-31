@@ -9,7 +9,7 @@ const Direction = () => {
                 flexDirection: "column",
                 height: "120px",
                 justifyContent: "space-between",
-                margin: "40px",
+                margin: "20px 46px",
             }}
         >
             <div
@@ -25,9 +25,10 @@ const Direction = () => {
             <Button
                 href="http://www.benyalighting.com/"
                 target="_blank"
+                variant="contained"
+                color="primary"
                 style={{
                     ...btnStyle,
-                    backgroundColor: "#A28F1A",
                     borderRadius: "2px",
                 }}
             >
@@ -36,9 +37,9 @@ const Direction = () => {
             <Button
                 href="http://www.deborahburnett.com/"
                 target="_blank"
+                variant="contained"
                 style={{
                     ...btnStyle,
-                    backgroundColor: "#8D8656",
                     borderRadius: "2px",
                 }}
             >

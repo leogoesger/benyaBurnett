@@ -18,6 +18,20 @@ const theme = createMuiTheme({
                 margin: "20px 0 20px 0",
             },
         },
+        MuiButton: {
+            containedPrimary: {
+                backgroundColor: "#A28F1A",
+                "&:hover": {
+                    backgroundColor: "rgb(209, 207, 207, 0.3)",
+                },
+            },
+            contained: {
+                backgroundColor: "#8D8656",
+                "&:hover": {
+                    backgroundColor: "rgb(209, 207, 207, 0.3)",
+                },
+            },
+        },
     },
     palette: {
         primary: { main: blue[500] }, // Purple and green play nicely together.
