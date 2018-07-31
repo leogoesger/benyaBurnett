@@ -3,28 +3,28 @@ import { Link } from "react-router-dom";
 
 const NavItems = () => {
     return (
-        <div>
-            <div className="nav-links">
-                <Link to="about">About</Link>
-            </div>
-            <div className="nav-links">
-                <Link to="team">Team</Link>
-            </div>
-            <div className="nav-links">
-                <Link to="services">Services</Link>
-            </div>
-            <div className="nav-links">
-                <Link to="projects">Projects</Link>
-            </div>
-            <div className="nav-links">
-                <Link to="news">News</Link>
-            </div>
-            <div className="nav-links">
-                <Link to="awards">Awards</Link>
-            </div>
-            <div className="nav-links">
-                <Link to="contact">Contact</Link>
-            </div>
+        <div className="nav-links">
+            <Link to="home">
+                <div className="nav-link">Home</div>
+            </Link>
+            <Link to="team">
+                <div className="nav-link">Team</div>
+            </Link>
+            <Link to="services">
+                <div className="nav-link">Services</div>
+            </Link>
+            <Link to="projects">
+                <div className="nav-link">Projects</div>
+            </Link>
+            <Link to="news">
+                <div className="nav-link">News</div>
+            </Link>
+            <Link to="awards">
+                <div className="nav-link">Awards</div>
+            </Link>
+            <Link to="contact">
+                <div className="nav-link">Contact</div>
+            </Link>
         </div>
     );
 };
