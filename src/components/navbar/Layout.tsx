@@ -1,14 +1,18 @@
 import * as React from "react";
 
-import { Logo, NavItems, Direction } from "./";
+import { Image, Logo, NavItems, Direction } from "./";
 import { Colors } from "../../styles";
 
-const Layout = () => {
+interface IProps {
+    pathname: string;
+}
+const Layout: React.SFC<IProps> = ({ pathname }) => {
     return (
         <div style={styles.container}>
             <Logo />
             <NavItems />
             <Direction />
+            <Image pathname={pathname} />
         </div>
     );
 };

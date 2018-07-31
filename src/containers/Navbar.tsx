@@ -1,10 +1,15 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import { Layout } from "../components/navbar";
 
-class Navbar extends React.PureComponent {
+interface IProps {
+    location: {
+        pathname: string;
+    };
+}
+
+class Navbar extends React.PureComponent<IProps, any> {
     render() {
-        return <Layout />;
+        return <Layout pathname={this.props.location.pathname} />;
     }
 }
 

@@ -31,8 +31,8 @@ const Footer = () => {
                     marginRight: "10px",
                 }}
             >
-                Copyright © 2018 Design Services, Inc. - Deborah Burnett. All
-                Rights Reserved. Benya Burnett Consultancy
+                Copyright © {new Date().getFullYear()} Design Services, Inc. -
+                Deborah Burnett. All Rights Reserved. Benya Burnett Consultancy
             </span>
         </div>
     );
