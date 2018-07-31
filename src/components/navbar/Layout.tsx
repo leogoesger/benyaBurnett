@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import { Logo, NavItem, Direction } from "./";
+import { Logo, NavItems, Direction } from "./";
 import { Colors } from "../../styles";
 
 const Layout = () => {
     return (
         <div style={styles.container}>
             <Logo />
-            <NavItem />
+            <NavItems />
             <Direction />
         </div>
     );

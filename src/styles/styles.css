@@ -156,28 +156,12 @@ li {
     margin-bottom: 5px;
 }
 
-.react-mapbox-tooltip {
-    position: absolute;
-    margin: 8px;
-    padding: 4px;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    max-width: 300px;
-    font-size: 10px;
-    z-index: 7;
-    pointer-events: none;
-}
-
-.react-mapbox {
-    height: 300px;
-    width: 100%;
-}
-
 #root {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #1b1b1b;
     font-family: "Helvetica";
+    font-weight: 100;
 }
 
 .nav-links {

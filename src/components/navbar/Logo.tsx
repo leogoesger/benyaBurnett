@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Divider } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const LogoImage = require("../../static/logo.png");
 
@@ -16,19 +16,21 @@ const Logo = () => {
         >
             <div
                 style={{
-                    color: "#eeeeee",
+                    color: "#cfcfcf",
                     fontSize: "10px",
-                    padding: "26px 0px 10px 10px",
+                    padding: "32px 0px 10px 10px",
                 }}
             >
                 Design Services INC
             </div>
-            <img
-                src={LogoImage}
-                alt="logo"
-                width="180px"
-                style={{ marginLeft: "10px" }}
-            />
+            <Link to="/">
+                <img
+                    src={LogoImage}
+                    alt="logo"
+                    width="180px"
+                    style={{ marginLeft: "10px" }}
+                />
+            </Link>
         </div>
     );
 };

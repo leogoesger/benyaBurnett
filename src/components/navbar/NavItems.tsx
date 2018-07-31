@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-const NavItem = () => {
+const NavItems = () => {
     return (
         <div>
             <div className="nav-links">
@@ -29,4 +29,4 @@ const NavItem = () => {
     );
 };
 
-export default NavItem;
+export default NavItems;

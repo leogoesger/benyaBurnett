@@ -1,6 +1,6 @@
 import Direction from "./Direction";
 import Layout from "./Layout";
 import Logo from "./Logo";
-import NavItem from "./NavItem";
+import NavItems from "./NavItems";
 
-export { Direction, Layout, Logo, NavItem };
+export { Direction, Layout, Logo, NavItems };

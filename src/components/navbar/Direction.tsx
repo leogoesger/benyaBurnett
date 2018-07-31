@@ -28,6 +28,7 @@ const Direction = () => {
                 style={{
                     ...btnStyle,
                     backgroundColor: "#A28F1A",
+                    borderRadius: "2px",
                 }}
             >
                 benyalighting.com
@@ -38,6 +39,7 @@ const Direction = () => {
                 style={{
                     ...btnStyle,
                     backgroundColor: "#8D8656",
+                    borderRadius: "2px",
                 }}
             >
                 deborahburnett.com
