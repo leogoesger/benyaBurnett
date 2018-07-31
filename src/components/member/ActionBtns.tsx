@@ -1,31 +1,36 @@
 import * as React from "react";
+import { Button } from "@material-ui/core";
 
-interface IMember {
-    title: string;
-    bio1: string;
-    bio2?: string;
-    bioUrl: string;
-    CVUrl: string;
-}
-
-interface IPartners {
-    title: string;
-    companies: [ICompany];
-}
-
-interface ICompany {
-    name: string;
-    imgUrl: string;
-    description: string;
-    companyUrl: string;
-}
+import { members } from "../../static/reference";
 
 interface IProps {
-    member: IMember | IPartners;
+    memberParam: string;
 }
 
-const ActionBtns: React.SFC<IProps> = ({ member }) => {
-    return <div>member</div>;
+const ActionBtns: React.SFC<IProps> = ({ memberParam }) => {
+    const member = members[memberParam];
+    return (
+        <div>
+            <div
+                style={{
+                    width: "90%",
+                    display: "flex",
+                    justifyContent: "space-around",
+                    margin: "40px auto 10px auto",
+                }}
+            >
+                <Button href={member.bioUrl} variant="outlined">
+                    {"Download Bio"}
+                </Button>
+                <Button href={member.CVUrl} variant="outlined">
+                    {"Download CV"}
+                </Button>
+                <Button style={{ color: "#757575" }} variant="outlined">
+                    {"Contact Me"}
+                </Button>
+            </div>
+        </div>
+    );
 };
 
 export default ActionBtns;

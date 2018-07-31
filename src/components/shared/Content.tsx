@@ -7,7 +7,7 @@ interface IProps {
 
 const Content: React.SFC<IProps> = props => {
     return (
-        <div style={{ height: "800px", width: "100%", display: "flex" }}>
+        <div style={{ height: "800px", width: "950px", display: "flex" }}>
             <div
                 style={{ width: "90%", backgroundColor: "rgb(239, 239, 239)" }}
             >
