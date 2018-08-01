@@ -1,4 +1,7 @@
 import MainContent from "./MainContent";
 import ContentHeader from "./ContentHeader";
+import Jim from "./Jim";
+import Deborah from "./Deborah";
+import ContactUs from "./ContactUs";
 
-export { MainContent, ContentHeader };
+export { ContactUs, MainContent, ContentHeader, Jim, Deborah };

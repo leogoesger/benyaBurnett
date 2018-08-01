@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Typography } from "@material-ui/core";
 import { MainContent, ContentHeader } from "../shared";
+import { projects } from "../../static/reference";
+import { ProjectCard } from "./";
 
 const Layout = () => {
     return (
@@ -12,6 +14,14 @@ const Layout = () => {
                     Consultancy, Benya Lighting Design, Pacific Lightworks,
                     Luminae Souter Lighting Design, and Smith Hinchman & Grylls.
                 </Typography>
+                <div style={{ margin: "20px auto", width: "96%" }}>
+                    {projects.map(project => (
+                        <ProjectCard
+                            name={project.name}
+                            projects={project.projects}
+                        />
+                    ))}
+                </div>
             </div>
         </MainContent>
     );
