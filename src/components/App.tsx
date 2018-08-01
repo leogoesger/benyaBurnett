@@ -4,7 +4,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Home, Navbar, LogIn } from "../containers";
 import { MemberLayout } from "../components/member";
 import { ServiceLayout, ServiceItem } from "../components/services";
-import { NewsLayout } from "../components/news";
+import { NewsLayout, NewsItem } from "../components/news";
+import { AwardLayout } from "../components/awards";
+import { ProjectsLayout } from "../components/projects";
+import { ContactLayout } from "../components/contact";
 import Team from "../components/team/Layout";
 import Footer from "./footer/Footer";
 
@@ -32,7 +35,11 @@ const App = () => (
                     component={ServiceItem}
                 />
                 <Route exact path="/news" component={NewsLayout} />
+                <Route exact path="/news/:newsItem" component={NewsItem} />
                 <Route exact path="/login" component={LogIn} />
+                <Route exact path="/awards" component={AwardLayout} />
+                <Route exact path="/projects" component={ProjectsLayout} />
+                <Route exact path="/contact" component={ContactLayout} />
             </div>
             <Footer />
         </div>

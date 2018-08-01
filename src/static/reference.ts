@@ -63,30 +63,30 @@ const services = [
     },
 ];
 
-const articles = [
+const news = [
     {
         displayName: "ONLINE LECTURES",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        to: "articles/online-lectures",
+        to: "news/online-lectures",
     },
     {
         displayName: "VIDEO INTERVIEWS",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        to: "articles/video-interviews",
+        to: "news/video-interviews",
     },
     {
         displayName: "MEDIA INTERVIEWS/REVIEWS",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        to: "articles/media-interviews-reviews",
+        to: "news/media-interviews-reviews",
     },
     {
         displayName: "PUBLISHED ARTICLES",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        to: "articles/published-articles",
+        to: "news/published-articles",
     },
 ];
 
@@ -159,4 +159,4 @@ const service = {
     },
 };
 
-export { articles, services, members, service };
+export { news, services, members, service };

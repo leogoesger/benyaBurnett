@@ -1,7 +1,8 @@
 import * as React from "react";
 
-import { articles } from "../../static/reference";
+import { news } from "../../static/reference";
 import { Colors } from "../../styles";
+import { Link } from "react-router-dom";
 
 const Articles = () => {
     return (
@@ -21,21 +22,28 @@ const Articles = () => {
                     justifyContent: "space-around",
                 }}
             >
-                {articles.map(article => {
+                {news.map(article => {
                     return (
-                        <div
-                            className="article-nav-item"
-                            style={{
-                                color: Colors.WHITE,
-                            }}
-                        >
-                            <span style={{ fontWeight: 400 }}>
-                                {article.displayName}
-                            </span>
-                            <div style={{ fontSize: "10px", marginTop: "6px" }}>
-                                {article.description}
+                        <Link to={article.to}>
+                            <div
+                                className="article-nav-item"
+                                style={{
+                                    color: Colors.WHITE,
+                                }}
+                            >
+                                <span style={{ fontWeight: 400 }}>
+                                    {article.displayName}
+                                </span>
+                                <div
+                                    style={{
+                                        fontSize: "10px",
+                                        marginTop: "6px",
+                                    }}
+                                >
+                                    {article.description}
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     );
                 })}
             </div>
