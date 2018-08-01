@@ -9,11 +9,11 @@ const Content: React.SFC<IProps> = props => {
     return (
         <div
             style={{
-                height: "800px",
                 width: "100%",
                 minWidth: "950px",
                 display: "flex",
                 overflow: "scroll",
+                height: "100%",
             }}
         >
             <div

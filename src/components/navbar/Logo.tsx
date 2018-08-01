@@ -27,7 +27,8 @@ const Logo = () => {
                 <img
                     src={LogoImage}
                     alt="logo"
-                    width="180px"
+                    width="200px"
+                    height="30px"
                     style={{ marginLeft: "10px" }}
                 />
             </Link>
