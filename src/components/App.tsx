@@ -1,7 +1,7 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import { Home, Navbar } from "../containers";
+import { Home, Navbar, LogIn } from "../containers";
 import { MemberLayout } from "../components/member";
 import { ServiceLayout, ServiceItem } from "../components/services";
 import { NewsLayout } from "../components/news";
@@ -32,6 +32,7 @@ const App = () => (
                     component={ServiceItem}
                 />
                 <Route exact path="/news" component={NewsLayout} />
+                <Route exact path="/login" component={LogIn} />
             </div>
             <Footer />
         </div>
