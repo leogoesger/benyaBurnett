@@ -9,29 +9,36 @@ const Articles = () => {
             style={{
                 width: "300px",
                 backgroundColor: Colors.GREEN,
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-around",
-                height: "440px",
+                height: "100%",
             }}
         >
-            {articles.map(article => {
-                return (
-                    <div
-                        className="article-nav-item"
-                        style={{
-                            color: Colors.WHITE,
-                        }}
-                    >
-                        <span style={{ fontWeight: 400 }}>
-                            {article.displayName}
-                        </span>
-                        <div style={{ fontSize: "10px", marginTop: "6px" }}>
-                            {article.description}
+            <div
+                style={{
+                    width: "300px",
+                    height: "430px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-around",
+                }}
+            >
+                {articles.map(article => {
+                    return (
+                        <div
+                            className="article-nav-item"
+                            style={{
+                                color: Colors.WHITE,
+                            }}
+                        >
+                            <span style={{ fontWeight: 400 }}>
+                                {article.displayName}
+                            </span>
+                            <div style={{ fontSize: "10px", marginTop: "6px" }}>
+                                {article.description}
+                            </div>
                         </div>
-                    </div>
-                );
-            })}
+                    );
+                })}
+            </div>
         </div>
     );
 };

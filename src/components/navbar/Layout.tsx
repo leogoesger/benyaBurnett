@@ -22,7 +22,7 @@ export default Layout;
 const styles = {
     container: {
         backgroundColor: Colors.GREEN,
-        height: "800px",
+        height: "100%",
         minWidth: "250px",
         width: "20%",
     },

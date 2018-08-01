@@ -5,7 +5,7 @@ type Props = {};
 
 const Layout: React.SFC<Props> = () => {
     return (
-        <div>
+        <div style={{ height: "100%", position: "relative" }}>
             <Header />
             <div
                 style={{
@@ -13,7 +13,7 @@ const Layout: React.SFC<Props> = () => {
                     justifyContent: "space-between",
                     backgroundColor: "#efefef",
                     width: "100%",
-                    height: "470px",
+                    height: "55%",
                 }}
             >
                 <Content />

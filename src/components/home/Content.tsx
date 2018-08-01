@@ -4,7 +4,7 @@ import { services } from "../../static/reference";
 
 const Content = () => {
     return (
-        <div style={{ width: "650px" }}>
+        <div style={{ width: "650px", height: "100%" }}>
             <div
                 style={{
                     margin: "30px 20px 0px 20px",
