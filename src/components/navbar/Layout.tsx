@@ -23,6 +23,7 @@ const styles = {
     container: {
         backgroundColor: Colors.GREEN,
         height: "800px",
-        width: "250px",
+        minWidth: "250px",
+        width: "20%",
     },
 };

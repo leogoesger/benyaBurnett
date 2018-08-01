@@ -1,12 +1,12 @@
 import * as React from "react";
-import Header from "../shared/ContentHeader";
+import { ContentHeader } from "../shared";
 
 interface IProps {
     title: string;
 }
 
 const Title: React.SFC<IProps> = ({ title }) => {
-    return <Header>{title}</Header>;
+    return <ContentHeader>{title}</ContentHeader>;
 };
 
 export default Title;

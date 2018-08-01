@@ -1,11 +1,11 @@
 import * as React from "react";
 import { Typography } from "@material-ui/core";
-import Content from "../shared/Content";
+import { MainContent } from "../shared";
 import { ActionBtns, Title } from "./";
 
 const Layout = () => {
     return (
-        <Content>
+        <MainContent>
             <Title />
             <div style={{ padding: "40px" }}>
                 <Typography>
@@ -30,7 +30,7 @@ const Layout = () => {
                 </Typography>
             </div>
             <ActionBtns />
-        </Content>
+        </MainContent>
     );
 };
 
