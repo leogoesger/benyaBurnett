@@ -10,7 +10,7 @@ const Layout: React.SFC<Props> = () => {
             <div
                 style={{
                     display: "flex",
-                    justifyContent: "space-around",
+                    justifyContent: "space-between",
                     backgroundColor: "#efefef",
                     width: "100%",
                     height: "470px",

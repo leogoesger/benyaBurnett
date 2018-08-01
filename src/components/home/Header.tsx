@@ -46,7 +46,7 @@ const Header = () => {
                     Benya Burnett Consultancy
                 </div>
             </div>
-            <img src={HeaderImage} alt="header" height="330px" width="950px" />
+            <img src={HeaderImage} alt="header" height="330px" width="100%" />
         </div>
     );
 };
