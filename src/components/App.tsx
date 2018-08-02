@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Home, Navbar, LogIn } from "../containers";
 import { MemberLayout } from "../components/member";
 import { ServiceLayout, ServiceItem } from "../components/services";
-import { NewsLayout, NewsItem } from "../components/news";
+import { NewsLayout } from "../components/news";
 import { AwardLayout } from "../components/awards";
 import { ProjectsLayout } from "../components/projects";
 import { ContactLayout } from "../components/contact";
@@ -17,9 +17,9 @@ const App = () => (
             style={{
                 display: "flex",
                 width: "96%",
+                margin: "0 auto",
                 minWidth: "1200px",
                 position: "relative",
-                overflow: "scroll",
                 minHeight: "800px",
             }}
         >
@@ -35,7 +35,6 @@ const App = () => (
                     component={ServiceItem}
                 />
                 <Route exact path="/news" component={NewsLayout} />
-                <Route exact path="/news/:newsItem" component={NewsItem} />
                 <Route exact path="/login" component={LogIn} />
                 <Route exact path="/awards" component={AwardLayout} />
                 <Route exact path="/projects" component={ProjectsLayout} />

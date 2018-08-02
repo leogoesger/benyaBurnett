@@ -1,3 +1,4 @@
 import ContactLayout from "./Layout";
+import People from "./People";
 
-export { ContactLayout };
+export { ContactLayout, People };

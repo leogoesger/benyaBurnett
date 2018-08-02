@@ -159,10 +159,10 @@ li {
 
 #root {
     display: flex;
-    justify-content: center;
     background-color: #424242;
     font-family: "Helvetica";
     height: 100%;
+    width: 100%;
     font-weight: 100;
 }
 
@@ -209,4 +209,26 @@ li {
 }
 .article-nav-item:hover {
     border: 1.5px solid #b4a647 !important;
+}
+
+.submit-btn {
+    background-color: "white" !important;
+}
+
+.news-overlay {
+    background-color: rgb(232, 232, 232, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30%;
+}
+
+.news-overlay:hover {
+    background-color: rgb(232, 232, 232, 0.3);
+    color: "white" !important;
 }
