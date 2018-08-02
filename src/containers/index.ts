@@ -1,6 +1,7 @@
 import Home from "./Home";
 import Navbar from "./Navbar";
 import LogIn from "./LogIn";
+import NewsItem from "./NewsItem";
 import ContactUs from "./ContactUs";
 
-export { ContactUs, Home, Navbar, LogIn };
+export { Home, Navbar, LogIn, NewsItem, ContactUs };
