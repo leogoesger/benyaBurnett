@@ -51,10 +51,7 @@ module.exports = {
         new CheckerPlugin(),
         new StyleLintPlugin(),
         new HtmlWebpackPlugin({ template: "index.html.ejs" }),
-        new DotenvPlugin({
-            sample: "./.env.sample",
-            path: "./.env",
-        }),
+        
     ],
     externals: {
         react: "React",
