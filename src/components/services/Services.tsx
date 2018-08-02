@@ -32,7 +32,7 @@ const Services = () => {
                             style={{
                                 display: "flex",
                                 height: "150px",
-                                justifyContent: "space-around",
+                                justifyContent: "space-between",
                                 width: "40%",
                                 marginTop: "6px",
                             }}
@@ -50,6 +50,7 @@ const Services = () => {
                                     padding: "26px 0px 26px 20px",
                                     fontSize: "16px",
                                     fontWeight: 400,
+                                    width: "350px",
                                 }}
                             >
                                 <Link to={service.to}>

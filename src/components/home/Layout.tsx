@@ -8,12 +8,12 @@ const Layout: React.SFC<Props> = () => {
         <div style={{ height: "100%", position: "relative" }}>
             <Header />
             <div
+                className="home-container"
                 style={{
                     display: "flex",
                     justifyContent: "space-between",
                     backgroundColor: "#efefef",
                     width: "100%",
-                    height: "55%",
                 }}
             >
                 <Content />

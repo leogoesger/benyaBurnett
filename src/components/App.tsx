@@ -8,6 +8,8 @@ import { NewsLayout } from "../components/news";
 import { AwardLayout } from "../components/awards";
 import { ProjectsLayout } from "../components/projects";
 import { ContactLayout } from "../components/contact";
+import { DoubleLeedLayout } from "../components/doubleLeed";
+
 import Team from "../components/team/Layout";
 import Footer from "./footer/Footer";
 
@@ -41,6 +43,11 @@ const App = () => (
                 <Route exact path="/awards" component={AwardLayout} />
                 <Route exact path="/projects" component={ProjectsLayout} />
                 <Route exact path="/contact" component={ContactLayout} />
+                <Route
+                    exact
+                    path="/double-platinum-leed-well"
+                    component={DoubleLeedLayout}
+                />
             </div>
             <Footer />
         </div>

@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
+
 const HeaderImage = require("../../static/headerImage.jpg");
 
 const Header = () => {
@@ -14,7 +16,7 @@ const Header = () => {
                 style={{
                     position: "absolute",
                     top: "16px",
-                    height: "80px",
+                    height: "110px",
                     width: "100%",
                     backgroundColor: "rgb(183, 183, 183, 0.5)",
                 }}
@@ -23,28 +25,44 @@ const Header = () => {
                 style={{
                     position: "absolute",
                     top: "24px",
-                    left: "200px",
+                    right: "100px",
+                    cursor: "pointer",
                 }}
             >
-                <div
-                    style={{
-                        fontSize: "36px",
-                        color: "#0d47a1",
-                        fontWeight: 400,
-                    }}
-                >
-                    World first Double Platinum LEED and WELL
-                </div>
-                <div
-                    style={{
-                        fontSize: "18px",
-                        color: "#0d47a1",
-                        fontWeight: 200,
-                    }}
-                >
-                    certified project featuring Circadian protective lighting by
-                    Benya Burnett Consultancy
-                </div>
+                <Link to="/double-platinum-leed-well">
+                    <div
+                        style={{
+                            fontSize: "36px",
+                            color: "#0d47a1",
+                            fontWeight: 400,
+                            textAlign: "right",
+                        }}
+                    >
+                        World first Double Platinum LEED and WELL
+                    </div>
+                    <div
+                        style={{
+                            fontSize: "18px",
+                            color: "#0d47a1",
+                            fontWeight: 200,
+                            textAlign: "right",
+                        }}
+                    >
+                        certified project featuring Circadian protective
+                        lighting by Benya Burnett Consultancy
+                    </div>
+                    <div
+                        style={{
+                            fontSize: "18px",
+                            color: "#0d47a1",
+                            fontWeight: 400,
+                            textAlign: "right",
+                            marginTop: "14px",
+                        }}
+                    >
+                        click to learn more...
+                    </div>
+                </Link>
             </div>
             <img src={HeaderImage} alt="header" height="330px" width="100%" />
         </div>

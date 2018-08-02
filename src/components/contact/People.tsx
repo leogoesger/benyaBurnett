@@ -4,7 +4,14 @@ import { Jim, Deborah } from "../shared";
 
 const People = () => {
     return (
-        <div style={{ display: "flex", width: "90%", margin: "0 auto" }}>
+        <div
+            style={{
+                display: "flex",
+                width: "70%",
+                margin: "0 auto",
+                justifyContent: "space-between",
+            }}
+        >
             <Jim />
             <Deborah />
         </div>

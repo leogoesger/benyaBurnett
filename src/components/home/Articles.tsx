@@ -20,6 +20,7 @@ const Articles = () => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-around",
+                    marginTop: "10px",
                 }}
             >
                 {news.map(article => {

@@ -198,7 +198,7 @@ li {
 }
 
 .article-nav-item {
-    height: 20%;
+    height: 18%;
     width: 80%;
     margin: 0 auto;
     border: 1px solid #827717;
@@ -231,4 +231,8 @@ li {
 .news-overlay:hover {
     background-color: rgb(232, 232, 232, 0.3);
     color: "white" !important;
+}
+
+.home-container {
+    height: calc(100% - 330px);
 }
