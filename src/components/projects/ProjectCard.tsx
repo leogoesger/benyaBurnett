@@ -12,7 +12,7 @@ interface IProps {
 }
 const Project: React.SFC<IProps> = ({ name, projects }) => {
     return (
-        <ExpansionPanel>
+        <ExpansionPanel style={{ backgroundColor: "#eeeeee" }}>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography>{name}</Typography>
             </ExpansionPanelSummary>

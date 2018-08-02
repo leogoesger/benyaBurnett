@@ -69,24 +69,32 @@ const services = [
 const news = [
     {
         displayName: "ONLINE LECTURES",
+        imgUrl:
+            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/online-lectures",
     },
     {
         displayName: "VIDEO INTERVIEWS",
+        imgUrl:
+            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/video-interviews",
     },
     {
         displayName: "MEDIA INTERVIEWS/REVIEWS",
+        imgUrl:
+            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/media-interviews-reviews",
     },
     {
         displayName: "PUBLISHED ARTICLES",
+        imgUrl:
+            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/published-articles",

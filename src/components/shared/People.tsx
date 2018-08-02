@@ -2,7 +2,18 @@ import * as React from "react";
 
 import { Colors } from "../../styles";
 
-const People = ({ member }) => {
+interface IProps {
+    member: {
+        company: string;
+        name: string;
+        website: string;
+        address: string;
+        phone: string;
+        image: string;
+    };
+}
+
+const People: React.SFC<IProps> = ({ member }) => {
     return (
         <div style={{ display: "flex" }}>
             <img src={member.image} width="180px" height="220" />
