@@ -3,7 +3,7 @@ import { ContentHeader } from "../shared";
 import newsMap from "../../static/newsMap";
 
 interface IProps {
-    type: string;
+	type: string;
 }
 
 const Title: React.SFC<IProps> = ({ type }) => {
@@ -16,8 +16,8 @@ const Title: React.SFC<IProps> = ({ type }) => {
 =======
 	let displayType = "";
 	switch (type) {
-		case "media-interviews-reviews":
-			displayType = "Media Interviews & Reviwes";
+		case "reviews":
+			displayType = "Reviwes";
 			break;
 		case "online-lectures":
 			displayType = "Online Lectures";
@@ -27,6 +27,9 @@ const Title: React.SFC<IProps> = ({ type }) => {
 			break;
 		case "published-articles":
 			displayType = "Published Articles";
+			break;
+		case "upcoming-events":
+			displayType = "Upcoming Events";
 			break;
 	}
 	return <ContentHeader>News/Media : {displayType}</ContentHeader>;
