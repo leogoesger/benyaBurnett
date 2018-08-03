@@ -1,7 +1,7 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import { Home, Navbar, LogIn, NewsItem } from "../containers";
+import { Admin, Home, Navbar, LogIn, NewsItem } from "../containers";
 import { MemberLayout } from "../components/member";
 import { ServiceLayout, ServiceItem } from "../components/services";
 import { NewsLayout } from "../components/news";
@@ -48,6 +48,7 @@ const App = () => (
                     path="/double-platinum-leed-well"
                     component={DoubleLeedLayout}
                 />
+                <Route exact path="/admin" component={Admin} />
             </div>
             <Footer />
         </div>

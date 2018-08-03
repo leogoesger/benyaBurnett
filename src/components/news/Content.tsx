@@ -29,7 +29,7 @@ const Content = () => {
                     <Link to={n.to}>
                         <div
                             style={{
-                                width: "250px",
+                                width: "270px",
                                 marginTop: "40px",
                                 position: "relative",
                                 cursor: "pointer",
@@ -39,7 +39,7 @@ const Content = () => {
                             <img
                                 src={n.imgUrl}
                                 alt={n.displayName}
-                                width="250px"
+                                width="270px"
                             />
                         </div>
                     </Link>

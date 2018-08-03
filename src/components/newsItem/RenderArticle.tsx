@@ -1,32 +1,42 @@
 import * as React from "react";
-interface IProps extends React.Props<any> {}
+import { Articles } from "../home";
 
-const RenderArticle = IProps => {
+interface IProps {
+    article: {
+        url: string;
+        imgUrl: string;
+        title: string;
+        date: string;
+        text: string;
+    };
+}
+
+const RenderArticle: React.SFC<IProps> = ({ article }) => {
     return (
-        <a href={`//${IProps.article.url}`} target="_blank">
+        <a href={`//${article.url}`} target="_blank">
             <div
                 style={{
                     display: "flex",
-                    marginLeft: "50px",
-                    marginTop: "50px",
+                    margin: "50px",
                 }}
             >
                 <img
                     style={{ float: "left" }}
-                    src="http://via.placeholder.com/100x100"
+                    src={article.imgUrl}
                     width="100"
                     height="100"
                     alt="Place Holder"
                 />
 
-                <div style={{ margin: "10px" }}>
+                <div style={{ marginLeft: "10px" }}>
                     <h1 style={{ fontWeight: "bold" }}>
-                        {IProps.article.title}
+                        {article.title}{" "}
+                        <span style={{ fontWeight: 200, fontSize: "12px" }}>
+                            {article.date.split("T")[0]}
+                        </span>
                     </h1>
-                    <p style={{ marginTop: "5px" }}>
-                        Date: {IProps.article.date.split("T")[0]}
-                    </p>
-                    <p style={{ marginTop: "5px" }}>{IProps.article.text}</p>
+
+                    <p style={{ marginTop: "5px" }}>{article.text}</p>
                 </div>
             </div>
         </a>

@@ -14,6 +14,25 @@ const Logo = () => {
                 borderBottomWidth: "1px",
             }}
         >
+            {localStorage.getItem("bbToken") && (
+                <div
+                    style={{
+                        position: "absolute",
+                        padding: "8px",
+                        left: "80px",
+                    }}
+                >
+                    <Link
+                        to="/admin"
+                        style={{
+                            color: "#99aa00",
+                            fontWeight: 400,
+                        }}
+                    >
+                        Logged In as Admin
+                    </Link>
+                </div>
+            )}
             <div
                 style={{
                     color: "#cfcfcf",

@@ -1,17 +1,24 @@
 import * as React from "react";
 import axios from "axios";
-import { RouteComponentProps, withRouter } from "react-router-dom";
-import { NewsLayout } from "../components/newsItem";
+import { NewsItemLayout } from "../components/newsItem";
 
-interface IProps extends RouteComponentProps<any>, React.Props<any> {}
+interface IProps {
+    match: {
+        params: {
+            newsItem: string;
+        };
+    };
+}
 
 interface IArticle {
     title: string;
     text: string;
     url: string;
-    date: Date;
+    date: string;
+    imgUrl: string;
     type: string;
 }
+
 interface IState {
     articles: IArticle[];
 }
@@ -33,11 +40,9 @@ class NewsItem extends React.PureComponent<IProps, IState> {
         const url = `${process.env.SERVER_ADDRESS}/api/articles/${type}`;
         try {
             const res = await axios.get(url);
-            if (res.data) {
-                this.setState({
-                    articles: res.data,
-                });
-            }
+            this.setState({
+                articles: res.data,
+            });
         } catch (e) {
             throw e;
         }
@@ -45,7 +50,7 @@ class NewsItem extends React.PureComponent<IProps, IState> {
 
     render() {
         if (!this.state.articles) return null;
-        return <NewsLayout articles={this.state.articles} />;
+        return <NewsItemLayout articles={this.state.articles} />;
     }
 }
 

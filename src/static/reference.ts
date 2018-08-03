@@ -97,7 +97,7 @@ const news = [
             "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        to: "news/media-interviews-reviews",
+        to: "news/reviews",
     },
     {
         displayName: "PUBLISHED ARTICLES",
