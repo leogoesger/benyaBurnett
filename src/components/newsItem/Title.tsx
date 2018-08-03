@@ -6,7 +6,22 @@ interface IProps {
 }
 
 const Title: React.SFC<IProps> = ({ type }) => {
-    return <ContentHeader>News/Media : {type}</ContentHeader>;
+	let displayType = "";
+	switch (type) {
+		case "media-interviews-reviews":
+			displayType = "Media Interviews & Reviwes";
+			break;
+		case "online-lectures":
+			displayType = "Online Lectures";
+			break;
+		case "video-interviews":
+			displayType = "Video Interviews";
+			break;
+		case "published-articles":
+			displayType = "Published Articles";
+			break;
+	}
+	return <ContentHeader>News/Media : {displayType}</ContentHeader>;
 };
 
 export default Title;
