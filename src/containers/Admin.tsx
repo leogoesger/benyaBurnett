@@ -12,14 +12,15 @@ class Admin extends React.PureComponent<IProps, {}> {
     componentDidMount() {
         const token = localStorage.getItem("bbToken");
         if (!token) return this.props.history.push("/");
-        try {
-            axios.get(`${process.env.SERVER_ADDRESS}/api/user/getme`, {
+
+        axios
+            .get(`${process.env.SERVER_ADDRESS}/api/user/getme`, {
                 headers: { bbToken: token },
+            })
+            .catch(e => {
+                localStorage.removeItem("bbToken");
+                return this.props.history.push("/");
             });
-        } catch (error) {
-            localStorage.removeItem("bbToken");
-            if (!token) this.props.history.push("/");
-        }
     }
 
     logOutHandler = () => {

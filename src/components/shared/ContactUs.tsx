@@ -1,6 +1,17 @@
 import * as React from "react";
-import { Button, Dialog, TextField } from "@material-ui/core";
+import MaskedInput from "react-text-mask";
+import {
+    Button,
+    Dialog,
+    FormControl,
+    TextField,
+    Input,
+    InputLabel,
+    FormHelperText,
+} from "@material-ui/core";
+
 import { Colors } from "../../styles";
+import { validateEmail, validateMessage } from "../../utils/helpers";
 
 interface IState {
     name: string;
@@ -21,6 +32,35 @@ interface IProps {
     onSubmit: (d: IInfo) => void;
 }
 
+function TextMaskCustom(props) {
+    const { inputRef, ...other } = props;
+
+    return (
+        <MaskedInput
+            {...other}
+            ref={inputRef}
+            mask={[
+                "(",
+                /[1-9]/,
+                /\d/,
+                /\d/,
+                ")",
+                " ",
+                /\d/,
+                /\d/,
+                /\d/,
+                "-",
+                /\d/,
+                /\d/,
+                /\d/,
+                /\d/,
+            ]}
+            placeholderChar={"\u2000"}
+            showMask
+        />
+    );
+}
+
 class ContactUs extends React.PureComponent<IProps, IState> {
     constructor(props) {
         super(props);
@@ -28,7 +68,7 @@ class ContactUs extends React.PureComponent<IProps, IState> {
             name: "",
             email: "",
             message: "",
-            phone: "",
+            phone: "(   )    -    ",
             open: false,
         };
     }
@@ -80,32 +120,56 @@ class ContactUs extends React.PureComponent<IProps, IState> {
                             margin="normal"
                             fullWidth
                         />
-                        <TextField
-                            id="email"
-                            label="email"
-                            value={this.state.email}
-                            onChange={this.handleChange("email")}
-                            margin="normal"
-                            fullWidth
-                        />
-                        <TextField
-                            id="phone"
-                            label="phone"
-                            value={this.state.phone}
-                            onChange={this.handleChange("phone")}
-                            margin="normal"
-                            fullWidth
-                        />
-                        <TextField
-                            id="message"
-                            label="message"
-                            multiline
-                            rows="6"
-                            value={this.state.message}
-                            onChange={this.handleChange("message")}
-                            margin="normal"
-                            fullWidth
-                        />
+
+                        <FormControl fullWidth style={{ marginTop: "16px" }}>
+                            <InputLabel htmlFor="formatted-email">
+                                Email
+                            </InputLabel>
+                            <Input
+                                value={this.state.email}
+                                onChange={this.handleChange("email")}
+                                id="formatted-email"
+                            />
+                            {!validateEmail(this.state.email) &&
+                                this.state.email && (
+                                    <FormHelperText className="error-text">
+                                        Please Enter Valid Email Address.
+                                    </FormHelperText>
+                                )}
+                        </FormControl>
+
+                        <FormControl fullWidth style={{ marginTop: "16px" }}>
+                            <InputLabel htmlFor="formatted-phone">
+                                Phone number
+                            </InputLabel>
+                            <Input
+                                value={this.state.phone}
+                                onChange={this.handleChange("phone")}
+                                id="formatted-phone"
+                                inputComponent={TextMaskCustom}
+                            />
+                        </FormControl>
+
+                        <FormControl fullWidth style={{ marginTop: "16px" }}>
+                            <InputLabel htmlFor="formatted-message">
+                                Your Message
+                            </InputLabel>
+                            <Input
+                                value={this.state.message}
+                                onChange={this.handleChange("message")}
+                                id="formatted-message"
+                                multiline
+                                rows="6"
+                            />
+                            {!validateMessage(this.state.message) &&
+                                this.state.message && (
+                                    <FormHelperText className="error-text">
+                                        Minimum length for the message is 60
+                                        characters.
+                                    </FormHelperText>
+                                )}
+                        </FormControl>
+
                         <div
                             className="submit-btn"
                             style={{

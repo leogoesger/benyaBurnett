@@ -16,7 +16,8 @@ const Articles = () => {
             <div
                 style={{
                     width: "300px",
-                    height: "430px",
+                    height: "50%",
+                    minHeight: "420px",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-around",
