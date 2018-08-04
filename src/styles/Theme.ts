@@ -32,6 +32,15 @@ const theme = createMuiTheme({
                 },
             },
         },
+        MuiInput: {
+            underline: {
+                "&:before": { borderBottom: "1px solid #827717" },
+                "&:hover:not($disabled):not($focused):not($error):before": {
+                    borderBottom: `2px solid #827717`,
+                },
+                "&:after": { borderBottom: "2px solid #827717" },
+            },
+        },
     },
     palette: {
         primary: { main: blue[500] }, // Purple and green play nicely together.

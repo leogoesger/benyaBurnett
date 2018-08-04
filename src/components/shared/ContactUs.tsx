@@ -81,6 +81,14 @@ class ContactUs extends React.PureComponent<IProps, IState> {
         this.setState({ [field]: e.target.value });
     };
 
+    isOkToSubmit() {
+        const { name, email, message, phone } = this.state;
+        const allFields = Boolean(name && email && message && phone);
+        return Boolean(
+            allFields && validateEmail(email) && validateMessage(message)
+        );
+    }
+
     onSubmit() {
         this.setState({ open: false });
         const { name, email, message, phone } = this.state;
@@ -132,7 +140,9 @@ class ContactUs extends React.PureComponent<IProps, IState> {
                             />
                             {!validateEmail(this.state.email) &&
                                 this.state.email && (
-                                    <FormHelperText className="error-text">
+                                    <FormHelperText
+                                        style={{ color: "#ef5350" }}
+                                    >
                                         Please Enter Valid Email Address.
                                     </FormHelperText>
                                 )}
@@ -163,7 +173,9 @@ class ContactUs extends React.PureComponent<IProps, IState> {
                             />
                             {!validateMessage(this.state.message) &&
                                 this.state.message && (
-                                    <FormHelperText className="error-text">
+                                    <FormHelperText
+                                        style={{ color: "#ef5350" }}
+                                    >
                                         Minimum length for the message is 60
                                         characters.
                                     </FormHelperText>
@@ -176,11 +188,15 @@ class ContactUs extends React.PureComponent<IProps, IState> {
                                 ...btnStyle,
                                 fontFamily: "Helvetica",
                                 borderRadius: "2px",
-                                backgroundColor: Colors.OFFGREEN,
+                                backgroundColor: this.isOkToSubmit()
+                                    ? Colors.OFFGREEN
+                                    : "#bdbdbd",
                                 textAlign: "center",
                                 paddingTop: "10px",
                                 boxSizing: "border-box",
-                                cursor: "pointer",
+                                cursor: this.isOkToSubmit()
+                                    ? "pointer"
+                                    : "not-allowed",
                             }}
                             onClick={() => this.onSubmit()}
                         >
