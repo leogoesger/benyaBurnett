@@ -13,7 +13,6 @@ interface IProps {
 
 interface IState {
 	email: string;
-<<<<<<< HEAD
 	successMsg: string;
 	errorMsg: null;
 	open: boolean;
@@ -36,16 +35,6 @@ class Admin extends React.PureComponent<IProps, IState> {
 
 	async componentDidMount() {
 		token = localStorage.getItem("bbToken");
-=======
-}
-
-class Admin extends React.PureComponent<IProps, IState> {
-	state = {
-		email: "",
-	};
-	async componentDidMount() {
-		const token = localStorage.getItem("bbToken");
->>>>>>> 1695f385f924606309b9272b0e3e4381a6f5587e
 		if (!token) return this.props.history.push("/");
 		try {
 			const res = await axios.get(
@@ -63,7 +52,6 @@ class Admin extends React.PureComponent<IProps, IState> {
 		}
 	}
 
-<<<<<<< HEAD
 	handleClose = () =>
 		this.setState({
 			open: false,
@@ -71,14 +59,11 @@ class Admin extends React.PureComponent<IProps, IState> {
 			errorMsg: null,
 		});
 
-=======
->>>>>>> 1695f385f924606309b9272b0e3e4381a6f5587e
 	logOutHandler = () => {
 		this.props.history.push("/");
 		localStorage.removeItem("bbToken");
 	};
 
-<<<<<<< HEAD
 	submitArticleHandler = async (data) => {
 		try {
 			const res = await axios.post(
@@ -164,14 +149,6 @@ class Admin extends React.PureComponent<IProps, IState> {
 					}
 				/>
 			</div>
-=======
-	render() {
-		return (
-			<AdminLayout
-				logOutHandler={this.logOutHandler}
-				email={this.state.email}
-			/>
->>>>>>> 1695f385f924606309b9272b0e3e4381a6f5587e
 		);
 	}
 }
