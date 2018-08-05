@@ -30,6 +30,7 @@ interface IInfo {
 }
 interface IProps {
 	onSubmit: (d: IInfo) => void;
+<<<<<<< HEAD
 }
 
 function TextMaskCustom(props) {
@@ -72,6 +73,21 @@ class ContactUs extends React.PureComponent<IProps, IState> {
             open: false,
         };
     }
+=======
+}
+
+class ContactUs extends React.PureComponent<IProps, IState> {
+	constructor(props) {
+		super(props);
+		this.state = {
+			name: "",
+			email: "",
+			message: "",
+			phone: "",
+			open: false,
+		};
+	}
+>>>>>>> 1695f385f924606309b9272b0e3e4381a6f5587e
 
 	handleClose = () => {
 		this.setState({ open: false });
@@ -80,6 +96,7 @@ class ContactUs extends React.PureComponent<IProps, IState> {
 	handleChange = (field: "name" | "email" | "message" | "phone") => (e) => {
 		this.setState({ [field]: e.target.value });
 	};
+<<<<<<< HEAD
 
     isOkToSubmit() {
         const { name, email, message, phone } = this.state;
@@ -88,13 +105,16 @@ class ContactUs extends React.PureComponent<IProps, IState> {
             allFields && validateEmail(email) && validateMessage(message)
         );
     }
+=======
+>>>>>>> 1695f385f924606309b9272b0e3e4381a6f5587e
 
-    onSubmit() {
-        this.setState({ open: false });
-        const { name, email, message, phone } = this.state;
-        this.props.onSubmit({ name, email, phone, msg: message });
-    }
+	onSubmit() {
+		this.setState({ open: false });
+		const { name, email, message, phone } = this.state;
+		this.props.onSubmit({ name, email, phone, msg: message });
+	}
 
+<<<<<<< HEAD
     public render() {
         return (
             <div>
@@ -207,6 +227,88 @@ class ContactUs extends React.PureComponent<IProps, IState> {
             </div>
         );
     }
+=======
+	public render() {
+		return (
+			<div>
+				<Button
+					variant="outlined"
+					onClick={() => this.setState({ open: true })}
+				>
+					Contact Us
+				</Button>
+				<Dialog
+					open={this.state.open}
+					onClose={this.handleClose}
+					aria-labelledby="alert-dialog-title"
+					aria-describedby="alert-dialog-description"
+				>
+					<div style={{ width: "400px", padding: "20px" }}>
+						<h1
+							style={{
+								fontSize: "28px",
+								color: Colors.GREEN,
+								fontFamily: "Helvetica",
+							}}
+						>
+							Contact Us
+						</h1>
+						<TextField
+							id="name"
+							label="name"
+							value={this.state.name}
+							onChange={this.handleChange("name")}
+							margin="normal"
+							fullWidth
+						/>
+						<TextField
+							id="email"
+							label="email"
+							value={this.state.email}
+							onChange={this.handleChange("email")}
+							margin="normal"
+							fullWidth
+						/>
+						<TextField
+							id="phone"
+							label="phone"
+							value={this.state.phone}
+							onChange={this.handleChange("phone")}
+							margin="normal"
+							fullWidth
+						/>
+						<TextField
+							id="message"
+							label="message"
+							multiline
+							rows="6"
+							value={this.state.message}
+							onChange={this.handleChange("message")}
+							margin="normal"
+							fullWidth
+						/>
+						<div
+							className="submit-btn"
+							style={{
+								...btnStyle,
+								fontFamily: "Helvetica",
+								borderRadius: "2px",
+								backgroundColor: Colors.OFFGREEN,
+								textAlign: "center",
+								paddingTop: "10px",
+								boxSizing: "border-box",
+								cursor: "pointer",
+							}}
+							onClick={() => this.onSubmit()}
+						>
+							Submit
+						</div>
+					</div>
+				</Dialog>
+			</div>
+		);
+	}
+>>>>>>> 1695f385f924606309b9272b0e3e4381a6f5587e
 }
 
 const btnStyle = {
