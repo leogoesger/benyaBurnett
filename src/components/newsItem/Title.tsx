@@ -7,33 +7,11 @@ interface IProps {
 }
 
 const Title: React.SFC<IProps> = ({ type }) => {
-<<<<<<< HEAD
-    return (
-        <ContentHeader>
-            NEWS / MEDIA : {type in newsMap ? newsMap[type] : "Missing Map"}
-        </ContentHeader>
-    );
-=======
-	let displayType = "";
-	switch (type) {
-		case "reviews":
-			displayType = "Reviwes";
-			break;
-		case "online-lectures":
-			displayType = "Online Lectures";
-			break;
-		case "video-interviews":
-			displayType = "Video Interviews";
-			break;
-		case "published-articles":
-			displayType = "Published Articles";
-			break;
-		case "upcoming-events":
-			displayType = "Upcoming Events";
-			break;
-	}
-	return <ContentHeader>News/Media : {displayType}</ContentHeader>;
->>>>>>> BB-21: formated article displayed
+	return (
+		<ContentHeader>
+			NEWS / MEDIA : {type in newsMap ? newsMap[type] : "Missing Map"}
+		</ContentHeader>
+	);
 };
 
 export default Title;

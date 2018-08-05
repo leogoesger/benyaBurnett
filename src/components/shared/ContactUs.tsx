@@ -62,7 +62,6 @@ function TextMaskCustom(props) {
 }
 
 class ContactUs extends React.PureComponent<IProps, IState> {
-<<<<<<< HEAD
     constructor(props) {
         super(props);
         this.state = {
@@ -73,18 +72,6 @@ class ContactUs extends React.PureComponent<IProps, IState> {
             open: false,
         };
     }
-=======
-	constructor(props) {
-		super(props);
-		this.state = {
-			name: "",
-			email: "",
-			message: "",
-			phone: "",
-			open: false,
-		};
-	}
->>>>>>> BB-21,23: validate login form, post article
 
 	handleClose = () => {
 		this.setState({ open: false });
@@ -94,7 +81,6 @@ class ContactUs extends React.PureComponent<IProps, IState> {
 		this.setState({ [field]: e.target.value });
 	};
 
-<<<<<<< HEAD
     isOkToSubmit() {
         const { name, email, message, phone } = this.state;
         const allFields = Boolean(name && email && message && phone);
@@ -221,94 +207,6 @@ class ContactUs extends React.PureComponent<IProps, IState> {
             </div>
         );
     }
-=======
-	onSubmit() {
-		this.setState({ open: false });
-		const { name, email, message, phone } = this.state;
-		this.props.onSubmit({ name, email, phone, msg: message });
-	}
-
-	public render() {
-		return (
-			<div>
-				<Button
-					variant="outlined"
-					onClick={() => this.setState({ open: true })}
-				>
-					Contact Us
-				</Button>
-				<Dialog
-					open={this.state.open}
-					onClose={this.handleClose}
-					aria-labelledby="alert-dialog-title"
-					aria-describedby="alert-dialog-description"
-				>
-					<div style={{ width: "400px", padding: "20px" }}>
-						<h1
-							style={{
-								fontSize: "28px",
-								color: Colors.GREEN,
-								fontFamily: "Helvetica",
-							}}
-						>
-							Contact Us
-						</h1>
-						<TextField
-							id="name"
-							label="name"
-							value={this.state.name}
-							onChange={this.handleChange("name")}
-							margin="normal"
-							fullWidth
-						/>
-						<TextField
-							id="email"
-							label="email"
-							value={this.state.email}
-							onChange={this.handleChange("email")}
-							margin="normal"
-							fullWidth
-						/>
-						<TextField
-							id="phone"
-							label="phone"
-							value={this.state.phone}
-							onChange={this.handleChange("phone")}
-							margin="normal"
-							fullWidth
-						/>
-						<TextField
-							id="message"
-							label="message"
-							multiline
-							rows="6"
-							value={this.state.message}
-							onChange={this.handleChange("message")}
-							margin="normal"
-							fullWidth
-						/>
-						<div
-							className="submit-btn"
-							style={{
-								...btnStyle,
-								fontFamily: "Helvetica",
-								borderRadius: "2px",
-								backgroundColor: Colors.OFFGREEN,
-								textAlign: "center",
-								paddingTop: "10px",
-								boxSizing: "border-box",
-								cursor: "pointer",
-							}}
-							onClick={() => this.onSubmit()}
-						>
-							Submit
-						</div>
-					</div>
-				</Dialog>
-			</div>
-		);
-	}
->>>>>>> BB-21,23: validate login form, post article
 }
 
 const btnStyle = {
