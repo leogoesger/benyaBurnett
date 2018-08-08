@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Divider } from "@material-ui/core";
 
-const HeaderThumb = require("../../assets/header-thumb.jpg");
-
 interface IProps {
     children: React.ReactNode;
 }
@@ -10,15 +8,6 @@ interface IProps {
 const ContentHeader: React.SFC<IProps> = props => {
     return (
         <div style={{ width: "100%", position: "relative", height: "100px" }}>
-            <div
-                style={{
-                    position: "absolute",
-                    width: "100%",
-                    height: "100px",
-                    backgroundColor: "rgb(239, 239, 239)",
-                }}
-            />
-            <img src={HeaderThumb} alt="header" width="100%" height="100px" />
             <div
                 style={{
                     position: "absolute",
@@ -32,7 +21,9 @@ const ContentHeader: React.SFC<IProps> = props => {
             >
                 {props.children}
             </div>
-            <Divider style={{ marginTop: "-2px" }} />
+            <Divider
+                style={{ width: "100%", top: "100px", position: "absolute" }}
+            />
         </div>
     );
 };
