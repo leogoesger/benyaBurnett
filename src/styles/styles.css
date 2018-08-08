@@ -235,4 +235,5 @@ li {
 
 .home-container {
     height: calc(100% - 330px);
+    overflow: scroll;
 }
