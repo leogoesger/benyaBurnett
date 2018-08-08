@@ -1,11 +1,11 @@
 import * as React from "react";
 
 interface IProps {
-	email: string;
+    email: string;
 }
 
 const Content: React.SFC<IProps> = ({ email }) => {
-	return <div>{`Your Email: {email}`}</div>;
+    return <div>{`Your Email: {email}`}</div>;
 };
 
 export default Content;

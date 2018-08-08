@@ -1,5 +1,6 @@
 import NewsItemLayout from "./Layout";
 import Title from "./Title";
 import RenderArticle from "./RenderArticle";
+import NewsItemDialog from "./admin/NewsItemDialog";
 
-export { NewsItemLayout, Title, RenderArticle };
+export { NewsItemDialog, NewsItemLayout, Title, RenderArticle };
