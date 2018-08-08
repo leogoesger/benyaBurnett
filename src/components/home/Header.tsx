@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-const HeaderImage = require("../../assets/homeHeader.jpg");
-
 const Header = () => {
     return (
         <div
@@ -64,7 +62,12 @@ const Header = () => {
                     </div>
                 </Link>
             </div>
-            <img src={HeaderImage} alt="header" height="330px" width="100%" />
+            <img
+                src="https://benya.nyc3.digitaloceanspaces.com/homeHeader.jpg"
+                alt="header"
+                height="330px"
+                width="100%"
+            />
         </div>
     );
 };

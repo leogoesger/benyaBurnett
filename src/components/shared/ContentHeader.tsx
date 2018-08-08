@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Divider } from "@material-ui/core";
 
-const HeaderThumb = require("../../static/header-thumb.jpg");
+const HeaderThumb = require("../../assets/header-thumb.jpg");
 
 interface IProps {
     children: React.ReactNode;

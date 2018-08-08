@@ -223,14 +223,15 @@ li {
     top: 0px;
     left: 0px;
     font-weight: 800;
+    font-size: 20px;
     text-align: center;
     box-sizing: border-box;
-    padding-top: 30%;
+    padding-top: 124px;
 }
 
 .news-overlay:hover {
     background-color: rgb(232, 232, 232, 0.3);
-    color: "white" !important;
+    font-size: 0px;
 }
 
 .home-container {

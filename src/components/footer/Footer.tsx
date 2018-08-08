@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import { Colors } from "../../styles";
-const LogoImage = require("../../static/footer-logo.png");
+const LogoImage = require("../../assets/footer-logo.png");
 
 const Footer = () => {
     return (

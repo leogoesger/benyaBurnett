@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-const LogoImage = require("../../static/logo.png");
+const LogoImage = require("../../assets/logo.png");
 
 const Logo = () => {
     return (

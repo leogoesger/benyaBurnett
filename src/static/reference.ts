@@ -1,6 +1,3 @@
-const jimImage = require("../assets/jim.jpg");
-const deborahImage = require("../assets/deborah.jpg");
-
 const services = [
     {
         displayName: "Legal expert witness services and testimony",
@@ -69,32 +66,28 @@ const services = [
 const news = [
     {
         displayName: "UPCOMING EVENTS",
-        imgUrl:
-            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
+        imgUrl: "https://benya.nyc3.digitaloceanspaces.com/upcoming-events.png",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/upcoming-events",
     },
     {
         displayName: "ONLINE LECTURES",
-        imgUrl:
-            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
+        imgUrl: "https://benya.nyc3.digitaloceanspaces.com/online-lecture.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/online-lectures",
     },
     {
         displayName: "VIDEO INTERVIEWS",
-        imgUrl:
-            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
+        imgUrl: "https://benya.nyc3.digitaloceanspaces.com/interview.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/video-interviews",
     },
     {
-        displayName: "MEDIA INTERVIEWS/REVIEWS",
-        imgUrl:
-            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
+        displayName: "REVIEWS",
+        imgUrl: "https://benya.nyc3.digitaloceanspaces.com/review.png",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/reviews",
@@ -102,7 +95,7 @@ const news = [
     {
         displayName: "PUBLISHED ARTICLES",
         imgUrl:
-            "http://cardiffstudentmedia.co.uk/gairrhydd/wp-content/uploads/sites/2/2012/03/John_Locke_Lecture_TT11_Lecture_1_web1.jpg",
+            "https://benya.nyc3.digitaloceanspaces.com/published-articles.png",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         to: "news/published-articles",
@@ -111,7 +104,7 @@ const news = [
 
 const members = {
     james: {
-        image: jimImage,
+        image: "https://benya.nyc3.digitaloceanspaces.com/jim.jpg",
         company: "Benya Lighting Design",
         name: "James Benya",
         phone: "+1 503 519 9631",
@@ -129,7 +122,7 @@ const members = {
     },
 
     deborah: {
-        image: deborahImage,
+        image: "https://benya.nyc3.digitaloceanspaces.com/deborah.jpg",
         company: "Design Services, Inc.",
         name: "Deborah Burnett",
         phone: "+1 615 351 8337",

@@ -24,18 +24,17 @@ const RenderArticle: React.SFC<IProps> = ({ article }) => {
             <div
                 style={{
                     display: "flex",
-                    margin: "50px",
+                    margin: "20px 40px",
                 }}
             >
                 <img
-                    style={{ float: "left" }}
                     src={article.imgUrl}
                     width="200px"
                     height="200px"
                     alt="Place Holder"
                 />
 
-                <div style={{ marginLeft: "10px" }}>
+                <div style={{ margin: "10px 20px", width: "450px" }}>
                     <h1 style={{ fontWeight: "bold" }}>
                         {article.title}
                         <span
@@ -45,7 +44,7 @@ const RenderArticle: React.SFC<IProps> = ({ article }) => {
                                 paddingLeft: "10px",
                             }}
                         >
-                            {article.date.split("T")[0]}
+                            Posted on: {article.date.split("T")[0]}
                         </span>
                     </h1>
                     <p style={{ marginTop: "5px", lineHeight: "20px" }}>
