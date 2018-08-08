@@ -64,7 +64,7 @@ class Admin extends React.PureComponent<IProps, IState> {
 
     render() {
         return (
-            <div>
+            <div style={{ height: "100%" }}>
                 <AdminLayout
                     logOutHandler={this.logOutHandler}
                     didPost={this.state.didPost}
