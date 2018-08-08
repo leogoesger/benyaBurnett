@@ -11,9 +11,16 @@ interface IProps {
     };
 }
 
+const getText = text => {
+    if (text.length > 400) {
+        return text.slice(0, 400) + "...";
+    }
+    return text;
+};
+
 const RenderArticle: React.SFC<IProps> = ({ article }) => {
     return (
-        <a href={`//${article.url}`} target="_blank">
+        <a href={`${article.url}`} target="_blank">
             <div
                 style={{
                     display: "flex",
@@ -23,20 +30,27 @@ const RenderArticle: React.SFC<IProps> = ({ article }) => {
                 <img
                     style={{ float: "left" }}
                     src={article.imgUrl}
-                    width="100"
-                    height="100"
+                    width="200px"
+                    height="200px"
                     alt="Place Holder"
                 />
 
                 <div style={{ marginLeft: "10px" }}>
                     <h1 style={{ fontWeight: "bold" }}>
-                        {article.title}{" "}
-                        <span style={{ fontWeight: 200, fontSize: "12px" }}>
+                        {article.title}
+                        <span
+                            style={{
+                                fontWeight: 200,
+                                fontSize: "12px",
+                                paddingLeft: "10px",
+                            }}
+                        >
                             {article.date.split("T")[0]}
                         </span>
                     </h1>
-
-                    <p style={{ marginTop: "5px" }}>{article.text}</p>
+                    <p style={{ marginTop: "5px", lineHeight: "20px" }}>
+                        {getText(article.text)}
+                    </p>
                 </div>
             </div>
         </a>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-const HeaderImage = require("../../static/headerImage.jpg");
+const HeaderImage = require("../../assets/homeHeader.jpg");
 
 const Header = () => {
     return (
@@ -18,7 +18,7 @@ const Header = () => {
                     top: "16px",
                     height: "110px",
                     width: "100%",
-                    backgroundColor: "rgb(183, 183, 183, 0.5)",
+                    backgroundColor: "rgb(183, 183, 183, 0.7)",
                 }}
             />
             <div

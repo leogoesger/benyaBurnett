@@ -47,10 +47,6 @@ class NewsItemDialog extends React.PureComponent<IProps, IState> {
 
     handleClose = () => {
         this.setState({
-            title: "",
-            text: "",
-            url: "",
-            imgUrl: "",
             open: false,
         });
     };

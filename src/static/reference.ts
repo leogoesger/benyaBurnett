@@ -1,5 +1,5 @@
-const jimImage = require("./jim.jpg");
-const deborahImage = require("./deborah.jpg");
+const jimImage = require("../assets/jim.jpg");
+const deborahImage = require("../assets/deborah.jpg");
 
 const services = [
     {
@@ -60,7 +60,7 @@ const services = [
     },
     {
         displayName: "Keynote presentations and seminars",
-        to: "services/Keynote presentations and seminars",
+        to: "services/keynote-presentations-and-seminars",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
