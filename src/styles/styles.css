@@ -238,3 +238,7 @@ li {
     height: calc(100% - 330px);
     overflow: scroll;
 }
+
+.service-nav:hover {
+    padding-left: 6px;
+}

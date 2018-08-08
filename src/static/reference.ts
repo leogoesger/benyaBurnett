@@ -1,31 +1,31 @@
 const services = [
     {
         displayName: "Legal expert witness services and testimony",
-        to: "services/legal-expert-witness-services-and-testimony",
+        to: "/services/legal-expert-witness-services-and-testimony",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "Architectural and day lighting design",
-        to: "services/architectural-and-day-lighting-design",
+        to: "/services/architectural-and-day-lighting-design",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "Circadian lighting design and peer review",
-        to: "services/circadian-lighting-design-and-peer-review",
+        to: "/services/circadian-lighting-design-and-peer-review",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "Product development and consulting",
-        to: "services/product-development-and-consulting",
+        to: "/services/product-development-and-consulting",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "Codes Standards and Guide lines development",
-        to: "services/codes-standards-and-guide-lines-development",
+        to: "/services/codes-standards-and-guide-lines-development",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
@@ -33,31 +33,31 @@ const services = [
         displayName:
             "Dark sky compliant exterior and street lighting design and consulting",
         to:
-            "services/dark-sky-compliant-exterior-and-street-lighting-design-and-consulting",
+            "/services/dark-sky-compliant-exterior-and-street-lighting-design-and-consulting",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "Technical writing CEU and Charette content development",
-        to: "services/technical-writing-CEU-and-charette-content-development",
+        to: "/services/technical-writing-CEU-and-charette-content-development",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "Environmental Impact studies and Research",
-        to: "services/environmental-impact-studies-and-research",
+        to: "/services/environmental-impact-studies-and-research",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "LEED and WELL compliant lighting design and consulting",
-        to: "services/LEED-and-WELL-compliant-lighting-design-and-consulting",
+        to: "/services/LEED-and-WELL-compliant-lighting-design-and-consulting",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName: "Keynote presentations and seminars",
-        to: "services/keynote-presentations-and-seminars",
+        to: "/services/keynote-presentations-and-seminars",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },

@@ -8,9 +8,19 @@ interface IProps {
 }
 const Layout: React.SFC<IProps> = ({ pathname }) => {
     return (
-        <div style={styles.container}>
+        <div
+            style={{
+                backgroundColor: Colors.GREEN,
+                height: "100%",
+                minWidth: "250px",
+                overflow: "scroll",
+                width: "20%",
+                paddingBottom: "60px",
+                boxSizing: "border-box",
+            }}
+        >
             <Logo />
-            <NavItems />
+            <NavItems pathname={pathname} />
             <Direction />
             <Image pathname={pathname} />
         </div>
@@ -18,12 +28,3 @@ const Layout: React.SFC<IProps> = ({ pathname }) => {
 };
 
 export default Layout;
-
-const styles = {
-    container: {
-        backgroundColor: Colors.GREEN,
-        height: "100%",
-        minWidth: "250px",
-        width: "20%",
-    },
-};
