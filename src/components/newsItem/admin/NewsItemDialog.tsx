@@ -106,7 +106,7 @@ class NewsItemDialog extends React.PureComponent<IProps, IState> {
                                 fontFamily: "Helvetica",
                             }}
                         >
-                            Contact Us
+                            Edit News Article
                         </h1>
 
                         <TextField

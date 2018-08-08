@@ -2,6 +2,7 @@ import * as React from "react";
 import { Button } from "@material-ui/core";
 
 import { members } from "../../static/reference";
+import { ContactUs } from "../../containers";
 
 interface IProps {
     memberParam: string;
@@ -25,9 +26,7 @@ const ActionBtns: React.SFC<IProps> = ({ memberParam }) => {
                 <Button href={member.CVUrl} variant="outlined">
                     {"Download CV"}
                 </Button>
-                <Button style={{ color: "#757575" }} variant="outlined">
-                    {"Contact Me"}
-                </Button>
+                <ContactUs />
             </div>
         </div>
     );
