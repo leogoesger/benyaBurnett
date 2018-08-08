@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-const LogoImage = require("../../assets/logo.png");
-
 const Logo = () => {
     return (
         <div
@@ -44,7 +42,7 @@ const Logo = () => {
             </div>
             <Link to="/">
                 <img
-                    src={LogoImage}
+                    src={"https://benya.nyc3.digitaloceanspaces.com/logo.png"}
                     alt="logo"
                     width="200px"
                     height="30px"

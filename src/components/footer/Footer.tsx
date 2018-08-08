@@ -2,7 +2,6 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import { Colors } from "../../styles";
-const LogoImage = require("../../assets/footer-logo.png");
 
 const Footer = () => {
     return (
@@ -20,7 +19,9 @@ const Footer = () => {
         >
             <Link to="/">
                 <img
-                    src={LogoImage}
+                    src={
+                        "https://benya.nyc3.digitaloceanspaces.com/footer-logo.png"
+                    }
                     alt="footer-logo"
                     style={{ padding: "10px 0px 0px 20px" }}
                 />
