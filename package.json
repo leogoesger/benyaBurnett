@@ -62,6 +62,7 @@
         "@material-ui/icons": "^1.1.0",
         "@types/react-text-mask": "^5.4.0",
         "axios": "^0.18.0",
+        "detect-browser": "^3.0.1",
         "ramda": "^0.25.0",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",

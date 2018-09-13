@@ -30,6 +30,7 @@ const Direction = () => {
                 style={{
                     ...btnStyle,
                     borderRadius: "2px",
+                    width: "auto",
                 }}
             >
                 benyalighting.com
@@ -41,6 +42,7 @@ const Direction = () => {
                 style={{
                     ...btnStyle,
                     borderRadius: "2px",
+                    width: "auto",
                 }}
             >
                 deborahburnett.com

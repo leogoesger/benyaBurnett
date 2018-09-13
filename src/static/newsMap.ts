@@ -1,9 +1,9 @@
 const newsMap = {
-    "upcoming-events": "Upcoming Events",
-    "online-lectures": "Online Lectures",
-    "video-interviews": "Video Interviews",
-    reviews: "Reviews",
-    "published-articles": "Published Articles",
+	"upcoming-events": "Upcoming Events",
+	"online-lectures": "YouTube Lectures",
+	"video-interviews": "Video Interviews",
+	reviews: "News/Media",
+	"published-articles": "Published Articles",
 };
 
 export default newsMap;

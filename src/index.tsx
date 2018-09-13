@@ -11,13 +11,13 @@ import Theme from "./styles/Theme";
 const rootEl = document.getElementById("root");
 
 const Root: React.SFC = () => (
-    <AppContainer>
-        <BrowserRouter>
-            <MuiThemeProvider theme={Theme}>
-                <App />
-            </MuiThemeProvider>
-        </BrowserRouter>
-    </AppContainer>
+	<AppContainer>
+		<BrowserRouter>
+			<MuiThemeProvider theme={Theme}>
+				<App />
+			</MuiThemeProvider>
+		</BrowserRouter>
+	</AppContainer>
 );
 
 render(<Root />, rootEl);
@@ -26,18 +26,18 @@ render(<Root />, rootEl);
 declare let module: { hot: any };
 
 if (module.hot) {
-    module.hot.accept("./components/App", () => {
-        const NewApp = require("./components/App").default;
+	module.hot.accept("./components/App", () => {
+		const NewApp = require("./components/App").default;
 
-        render(
-            <AppContainer>
-                <BrowserRouter>
-                    <MuiThemeProvider theme={Theme}>
-                        <NewApp />
-                    </MuiThemeProvider>
-                </BrowserRouter>
-            </AppContainer>,
-            rootEl
-        );
-    });
+		render(
+			<AppContainer>
+				<BrowserRouter>
+					<MuiThemeProvider theme={Theme}>
+						<NewApp />
+					</MuiThemeProvider>
+				</BrowserRouter>
+			</AppContainer>,
+			rootEl
+		);
+	});
 }
