@@ -21,7 +21,6 @@ const Articles = () => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-around",
-                    marginTop: "40px",
                 }}
             >
                 {news.map(article => {
