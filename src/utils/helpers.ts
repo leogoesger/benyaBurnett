@@ -1,4 +1,4 @@
-import detect from "detect-browser";
+import { detect } from "detect-browser";
 import { lifecycle } from "recompose";
 
 export const validateEmail = (email) => {
@@ -30,7 +30,6 @@ export const sortProjects = (proJects: any[]) => {
 };
 
 const _getBrowserMajorVersion = (version) => {
-	console.log("version", version);
 	if (version) {
 		const versionNumbers = version.split(".");
 		if (versionNumbers.length) {
@@ -40,7 +39,7 @@ const _getBrowserMajorVersion = (version) => {
 	return null;
 };
 
-export const isBrowserNotSupported = () => {
+export const isBrowserNotSupported = (): boolean => {
 	const browser = detect();
 
 	if (browser && browser.name && browser.version) {
