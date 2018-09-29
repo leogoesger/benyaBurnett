@@ -8,6 +8,9 @@ const Codes = () => {
             <Title
                 title={"Technical writing and Charette content development"}
             />
+            <div className="main-content-paragraph">
+                Details coming soon..
+            </div>
             <div
                 style={{
                     width: "100%",

@@ -6,6 +6,9 @@ const Codes = () => {
     return (
         <div className="main-content">
             <Title title={"Keynote presentations and seminars"} />
+            <div className="main-content-paragraph">
+                Details coming soon..
+            </div>
             <div
                 style={{
                     width: "100%",
