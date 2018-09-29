@@ -1,12 +1,23 @@
 import * as React from "react";
 import Title from "./Title";
+import { ContactUs } from "../../../containers";
 
 const Codes = () => {
     return (
-        <div>
+        <div className="main-content">
             <Title
-                title={"Technical writing CEU and Charette content development"}
-            />Codes
+                title={"Technical writing and Charette content development"}
+            />
+            <div
+                style={{
+                    width: "100%",
+                    margin: "0 auto",
+                    display: "flex",
+                    justifyContent: "space-around",
+                }}
+            >
+                <ContactUs />
+            </div>
         </div>
     );
 };
