@@ -7,6 +7,9 @@ const Circadian = () => {
     return (
         <div className="main-content">
             <Title title={"Circadian lighting design and peer review"} />
+            <div className="main-content-paragraph">
+                Details coming soon..
+            </div>
             <div
                 style={{
                     width: "100%",

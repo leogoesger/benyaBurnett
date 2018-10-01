@@ -8,6 +8,9 @@ const Codes = () => {
             <Title
                 title={"LEED and WELL compliant lighting design and consulting"}
             />
+            <div className="main-content-paragraph">
+                Details coming soon..
+            </div>
             <div
                 style={{
                     width: "100%",

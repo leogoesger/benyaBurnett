@@ -10,6 +10,10 @@ const Codes = () => {
                     "Dark sky compliant exterior and streetlighting design and consulting"
                 }
             />
+            <div className="main-content-paragraph">
+                Details coming soon..
+            </div>
+
             <div
                 style={{
                     width: "100%",
