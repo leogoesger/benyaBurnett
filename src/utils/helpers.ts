@@ -1,4 +1,4 @@
-import detect from "detect-browser";
+import { detect } from "detect-browser";
 import { lifecycle } from "recompose";
 
 export const validateEmail = (email) => {
