@@ -12,17 +12,42 @@ const ActionBtns = () => {
                 margin: "20px auto",
             }}
         >
-            <Link to="team/james">
-                <Button variant="outlined">{"BIO / CV: James Benya"}</Button>
-            </Link>
-            <Link to="team/deborah">
-                <Button variant="outlined">
-                    {"BIO / CV: Deborah Burnett"}
-                </Button>
-            </Link>
-            <Link to="team/partners">
-                <Button variant="outlined">{"Other Team Partners"}</Button>
-            </Link>
+            <div style={{ width: "40%" }}>
+                <Link to="team/james">
+                    <Button style={{ width: "340px" }} variant="outlined">
+                        {"History: Design Service Inc"}
+                    </Button>
+                </Link>
+                <Link to="team/deborah">
+                    <Button
+                        style={{ width: "340px", marginTop: "14px" }}
+                        variant="outlined"
+                    >
+                        {"History: Benya Burnett Consultancy"}
+                    </Button>
+                </Link>
+            </div>
+            <div style={{ width: "30%" }}>
+                <Link to="team/james">
+                    <Button style={{ width: "240px" }} variant="outlined">
+                        {"BIO / CV: James Benya"}
+                    </Button>
+                </Link>
+                <Link to="team/deborah">
+                    <Button
+                        style={{ width: "240px", marginTop: "14px" }}
+                        variant="outlined"
+                    >
+                        {"BIO / CV: Deborah Burnett"}
+                    </Button>
+                </Link>
+            </div>
+
+            <div style={{ width: "30%" }}>
+                <Link to="team/partners">
+                    <Button variant="outlined">{"Other Team Partners"}</Button>
+                </Link>
+            </div>
         </div>
     );
 };

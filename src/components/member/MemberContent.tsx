@@ -1,23 +1,17 @@
 import * as React from "react";
-import { Typography } from "@material-ui/core";
 
-import { members } from "../../static/reference";
+import James from "./James";
+import Deborah from "./Deborah";
 
 interface IProps {
     memberParam: string;
 }
 const MemberContent: React.SFC<IProps> = ({ memberParam }) => {
-    const member = members[memberParam];
-    return (
-        <div style={{ padding: "40px", paddingTop: "10px" }}>
-            <Typography>{member.bio1}</Typography>
-            {member.bio2 && (
-                <Typography style={{ paddingTop: "10px" }}>
-                    {member.bio2}
-                </Typography>
-            )}
-        </div>
-    );
+    if (memberParam === "james") {
+        return <James />;
+    } else if (memberParam === "deborah") {
+        return <Deborah />;
+    }
 };
 
 export default MemberContent;

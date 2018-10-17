@@ -7,7 +7,25 @@ const Codes = () => {
         <div className="main-content">
             <Title title={"Keynote presentations and seminars"} />
             <div className="main-content-paragraph">
-                Details coming soon..
+                <div style={{ width: "500px", margin: "100px auto" }}>
+                    <div
+                        style={{
+                            fontSize: "24px",
+                            fontWeight: "bold",
+                            color: "#616161",
+                            margin: "100px 0px 10px 0px",
+                        }}
+                    >
+                        Page undergoing update: sorry for the inconvenience.
+                    </div>
+                    <div>
+                        For detailed information normally found on this page
+                        please email Deborah Burnett{" "}
+                        <span style={{ textDecoration: "underline" }}>
+                            deborah at deborahburnett dot com
+                        </span>
+                    </div>
+                </div>
             </div>
             <div
                 style={{

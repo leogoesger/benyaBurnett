@@ -8,6 +8,7 @@ import LEED from "./LEED";
 import Legal from "./Legal";
 import Product from "./Product";
 import Technical from "./Technical";
+import Onsite from "./Onsite";
 
 export {
     Architectural,
@@ -20,4 +21,5 @@ export {
     Legal,
     Product,
     Technical,
+    Onsite,
 };

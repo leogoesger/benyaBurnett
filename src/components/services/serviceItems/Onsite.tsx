@@ -2,13 +2,11 @@ import * as React from "react";
 import Title from "./Title";
 import { ContactUs } from "../../../containers";
 
-const Codes = () => {
+const Onsite = () => {
     return (
         <div className="main-content">
             <Title
-                title={
-                    "Dark sky compliant exterior and streetlighting design and consulting"
-                }
+                title={"Onsite team 'charette' development and facilitation"}
             />
             <div className="main-content-paragraph">
                 <div style={{ width: "500px", margin: "100px auto" }}>
@@ -31,7 +29,6 @@ const Codes = () => {
                     </div>
                 </div>
             </div>
-
             <div
                 style={{
                     width: "100%",
@@ -46,4 +43,4 @@ const Codes = () => {
     );
 };
 
-export default Codes;
+export default Onsite;

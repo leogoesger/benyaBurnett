@@ -6,7 +6,7 @@ const services = [
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
-        displayName: "Architectural and day lighting design",
+        displayName: "Architectural and daylighting design",
         to: "/services/architectural-and-day-lighting-design",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
@@ -24,39 +24,48 @@ const services = [
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
-        displayName: "Codes Standards and Guide lines development",
+        displayName: "Codes standards and community guidelines development",
         to: "/services/codes-standards-and-guide-lines-development",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
         displayName:
-            "Dark sky compliant exterior and street lighting design and consulting",
+            "Dark sky compliant exterior and streetlighting design and consulting",
         to:
             "/services/dark-sky-compliant-exterior-and-street-lighting-design-and-consulting",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
-        displayName: "Technical writing and Charette content development",
+        displayName:
+            "Technical writing, Powerpoint content, and training manual development",
         to: "/services/technical-writing-CEU-and-charette-content-development",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
-        displayName: "Environmental Impact studies and Research",
+        displayName: "Onsite team 'charette' development and facilitation",
+        to: "/services/onsite-team-development-and-facilitation",
+        imgUrl:
+            "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
+    },
+    {
+        displayName: "Environmental impact studies and research",
         to: "/services/environmental-impact-studies-and-research",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
-        displayName: "LEED and WELL compliant lighting design and consulting",
+        displayName:
+            "LEED and WELL certification compliant lighting design, consulting, and peer review",
         to: "/services/LEED-and-WELL-compliant-lighting-design-and-consulting",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
     {
-        displayName: "Keynote presentations and seminars",
+        displayName:
+            "Keynote presentations, academic lectures, conference seminars, and onsite workshops",
         to: "/services/keynote-presentations-and-seminars",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",

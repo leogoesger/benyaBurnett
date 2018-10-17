@@ -82,7 +82,7 @@ const Image: React.SFC<IProps> = ({ pathname }) => {
         case "/services/environmental-impact-studies-and-research":
             return (
                 <ImageWrapper
-                    img="https://benya.nyc3.digitaloceanspaces.com/environment.jpg"
+                    img="https://benya.nyc3.digitaloceanspaces.com/enviroment.jpg"
                     width="200px"
                     height="250px"
                 />
