@@ -1,8 +1,4 @@
 import axios from "axios";
-import { AxiosResponse } from "axios";
-
-const token = localStorage.getItem("bbToken");
-axios.defaults.headers.common["Authorization"] = token;
 
 const url = `${process.env.SERVER_ADDRESS}/api`;
 
@@ -16,7 +12,9 @@ interface IArticle {
     _id: string;
 }
 
-export const createArticle = data => {
+export const createArticle = async data => {
+    const token = localStorage.getItem("bbToken");
+
     return axios
         .post(`${url}/articles/post`, data, {
             headers: { bbToken: token },
@@ -24,7 +22,9 @@ export const createArticle = data => {
         .catch(e => localStorage.removeItem("bbToken"));
 };
 
-export const deleteArticle = (articleId: string) => {
+export const deleteArticle = async (articleId: string) => {
+    const token = localStorage.getItem("bbToken");
+
     return axios
         .delete(
             `${process.env.SERVER_ADDRESS}/api/articles/remove/${articleId}`,
@@ -35,7 +35,9 @@ export const deleteArticle = (articleId: string) => {
         .catch(e => localStorage.removeItem("bbToken"));
 };
 
-export const updateArticle = data => {
+export const updateArticle = async data => {
+    const token = localStorage.getItem("bbToken");
+
     return axios
         .put(`${process.env.SERVER_ADDRESS}/api/articles/update`, data, {
             headers: { bbToken: token },
