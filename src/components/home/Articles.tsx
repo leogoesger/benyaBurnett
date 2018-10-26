@@ -8,6 +8,7 @@ const Articles = () => {
     return (
         <div
             style={{
+                paddingTop: "40px",
                 width: "300px",
                 backgroundColor: Colors.GREEN,
                 height: "100%",
