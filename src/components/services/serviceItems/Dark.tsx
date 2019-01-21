@@ -7,29 +7,57 @@ const Codes = () => {
         <div className="main-content">
             <Title
                 title={
-                    "Dark sky compliant exterior and streetlighting design and consulting"
+                    "Streetlighting and DARK SKY compliant Design and Consultation"
                 }
             />
             <div className="main-content-paragraph">
-                <div style={{ width: "500px", margin: "100px auto" }}>
+                <a
+                    href={`https://sacramento.cbslocal.com/2019/01/16/davis-lighting-safety/`}
+                    target="_blank"
+                >
                     <div
                         style={{
-                            fontSize: "24px",
-                            fontWeight: "bold",
-                            color: "#616161",
-                            margin: "100px 0px 10px 0px",
+                            display: "flex",
+                            margin: "20px 0px 20px 0px",
                         }}
                     >
-                        Page undergoing update: sorry for the inconvenience.
+                        <img
+                            src={
+                                "https://benya.nyc3.digitaloceanspaces.com/news.jpg"
+                            }
+                            width="200px"
+                            height="200px"
+                            alt="Place Holder"
+                        />
+
+                        <div style={{ margin: "10px 20px", width: "450px" }}>
+                            <h1 style={{ fontWeight: "bold" }}>
+                                {
+                                    "Davis Looking For Street Lighting Solutions To Increase Safety"
+                                }
+                                <span
+                                    style={{
+                                        fontWeight: 200,
+                                        fontSize: "12px",
+                                        paddingLeft: "10px",
+                                    }}
+                                >
+                                    Posted on: {"2018-10-26"}
+                                </span>
+                            </h1>
+                            <p
+                                style={{
+                                    marginTop: "5px",
+                                    lineHeight: "20px",
+                                }}
+                            >
+                                {
+                                    "James Benya is a lighting designer and member of the Dark Sky Asociation who has worked with the city to improve outdoor lighting."
+                                }
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        For detailed information normally found on this page
-                        please email Deborah Burnett{" "}
-                        <span style={{ textDecoration: "underline" }}>
-                            deborah at deborahburnett dot com
-                        </span>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <div

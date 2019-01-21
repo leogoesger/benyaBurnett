@@ -10,6 +10,7 @@ interface IProps {
 const ServiceItem: React.SFC<IProps> = ({ location }) => {
     let pathname = location.pathname.split("/")[2].split("-")[0];
     pathname = pathname.substr(0, 1).toUpperCase() + pathname.substr(1);
+    pathname = pathname === "Streetlighting" ? "Dark" : pathname;
     const Service = ServiceItems[pathname];
     return (
         <MainContent>
