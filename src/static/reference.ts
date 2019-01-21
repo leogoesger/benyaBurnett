@@ -31,9 +31,9 @@ const services = [
     },
     {
         displayName:
-            "Dark sky compliant exterior and streetlighting design and consulting",
+            "Streetlighting and DARK SKY compliant Design and Consultation",
         to:
-            "/services/dark-sky-compliant-exterior-and-street-lighting-design-and-consulting",
+            "/services/streetlighting-and-dark-sky-compliant-design-and-consultation",
         imgUrl:
             "https://pbs.twimg.com/profile_images/846659478120366082/K-kZVvT8.jpg",
     },
