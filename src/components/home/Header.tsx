@@ -14,8 +14,19 @@ const Header = () => {
                 style={{
                     position: "absolute",
                     top: "16px",
-                    height: "110px",
+                    height: "70px",
                     width: "720px",
+                    right: 40,
+                    backgroundColor: "#B7B7B7",
+                    opacity: 0.4,
+                }}
+            />
+            <div
+                style={{
+                    position: "absolute",
+                    top: "98px",
+                    height: "28px",
+                    width: "200px",
                     right: 40,
                     backgroundColor: "#B7B7B7",
                     opacity: 0.4,
@@ -33,7 +44,7 @@ const Header = () => {
                     <div
                         style={{
                             fontSize: "26px",
-                            color: "#0d47a1",
+                            color: "rgb(9, 54, 124)",
                             fontWeight: 600,
                             textAlign: "right",
                         }}
@@ -44,7 +55,7 @@ const Header = () => {
                         style={{
                             fontSize: "16px",
                             marginTop: "10px",
-                            color: "#0d47a1",
+                            color: "rgb(9, 54, 124)",
                             lineHeight: "20px",
                             fontWeight: 600,
                             textAlign: "left",
@@ -56,10 +67,10 @@ const Header = () => {
                     <div
                         style={{
                             fontSize: "18px",
-                            color: "#0d47a1",
+                            color: "rgb(9, 54, 124)",
                             fontWeight: 600,
                             textAlign: "right",
-                            marginTop: "14px",
+                            marginTop: "20px",
                         }}
                     >
                         click to learn more...
@@ -75,14 +86,16 @@ const Header = () => {
                     }}
                 >
                     <img
-                        src="https://benya.nyc3.digitaloceanspaces.com/bottom-left.jpg"
+                        src="https://benya.nyc3.digitaloceanspaces.com/up-left.jpg"
                         alt="header"
                         height="158px"
                         width="100%"
                         style={{
+                            objectFit: "cover",
                             borderWidth: "5px",
                             borderColor: "black",
                             borderStyle: "solid",
+                            borderLeftWidth: "4px",
                             borderBottomWidth: "0px",
                             width: "98%",
                         }}
@@ -93,10 +106,12 @@ const Header = () => {
                         height="157px"
                         width="100%"
                         style={{
+                            objectFit: "cover",
                             borderWidth: "5px",
                             borderColor: "black",
                             borderStyle: "solid",
                             borderBottomColor: "#827717",
+                            borderLeftWidth: "4px",
                             width: "98%",
                         }}
                     />
@@ -108,6 +123,7 @@ const Header = () => {
                     height="320px"
                     width="70%"
                     style={{
+                        objectFit: "cover",
                         borderWidth: "5px",
                         borderColor: "black",
                         borderStyle: "solid",
