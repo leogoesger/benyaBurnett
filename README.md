@@ -36,17 +36,17 @@ Minimal starter kit with hot module replacement (HMR) for rapid development.
 
 **All commands**
 
-| Command              | Description                                                               |
-| -------------------- | ------------------------------------------------------------------------- |
-| `npm run start-dev`  | Build app continuously (HMR enabled) and serve @ `http://localhost:8080`  |
-| `npm run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`         |
-| `npm run build`      | Build app to `/dist/`                                                     |
-| `npm run test`       | Run tests                                                                 |
-| `npm run lint`       | Run Typescript and SASS linter                                            |
-| `npm run lint:ts`    | Run Typescript linter                                                     |
-| `npm run lint:sass`  | Run SASS linter                                                           |
-| `npm run start`      | (alias of `npm run start-dev`)                                            |
-| scp                  | `scp -r test user_name@ip.ip.ip.ip:/home/leoqiu/benyaBurnett-client/dist` |
+| Command              | Description                                                                 |
+| -------------------- | --------------------------------------------------------------------------- |
+| `npm run start-dev`  | Build app continuously (HMR enabled) and serve @ `http://localhost:8080`    |
+| `npm run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`           |
+| `npm run build`      | Build app to `/dist/`                                                       |
+| `npm run test`       | Run tests                                                                   |
+| `npm run lint`       | Run Typescript and SASS linter                                              |
+| `npm run lint:ts`    | Run Typescript linter                                                       |
+| `npm run lint:sass`  | Run SASS linter                                                             |
+| `npm run start`      | (alias of `npm run start-dev`)                                              |
+| scp                  | `scp -r dist/* user_name@ip.ip.ip.ip:/home/leoqiu/benyaBurnett-client/dist` |
 
 ## See also
 * [React Webpack Babel Starter](https://github.com/vikpe/react-webpack-babel-starter)

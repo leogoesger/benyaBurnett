@@ -77,28 +77,27 @@ const news = [
         displayName: "UPCOMING EVENTS",
         imgUrl: "https://benya.nyc3.digitaloceanspaces.com/upcoming-events.png",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Obtain information about upcoming and past lectures, webinars, lighting class offerings, and conference presentation schedules.",
         to: "news/upcoming-events",
     },
     {
         displayName: "YOUTUBE LECTURES",
         imgUrl: "https://benya.nyc3.digitaloceanspaces.com/interview.jpg",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "View full length lectures, keynotes, and presentations.",
         to: "news/online-lectures",
     },
     {
         displayName: "VIDEO INTERVIEWS",
         imgUrl: "https://benya.nyc3.digitaloceanspaces.com/video-camera.jpg",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Watch various interviews offered by James and Deborah on lighting related topics.",
         to: "news/video-interviews",
     },
     {
         displayName: "NEWS/MEDIA",
         imgUrl: "https://benya.nyc3.digitaloceanspaces.com/review.png",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Learn about news worthy topics such as circadian and wellness lighting, legal issues in lighting design, street lighting, dark skies ordinances, and light at night (LAN).",
         to: "news/reviews",
     },
     {
@@ -106,7 +105,7 @@ const news = [
         imgUrl:
             "https://benya.nyc3.digitaloceanspaces.com/published-articles.png",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Download articles, white papers and research relevant to lighting, wellness and issues pertaining to the practice of lighting design and illuminating engineering.",
         to: "news/published-articles",
     },
 ];

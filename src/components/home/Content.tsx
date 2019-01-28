@@ -4,12 +4,19 @@ import { services } from "../../static/reference";
 
 const Content = () => {
     return (
-        <div style={{ width: "800px", height: "100%" }}>
+        <div
+            style={{
+                width: "800px",
+                height: "100%",
+                padding: "0px 0px 0px 40px",
+            }}
+        >
             <div
                 style={{
                     margin: "30px 20px 0px 20px",
-                    lineHeight: "20px",
+                    lineHeight: "24px",
                     fontWeight: 400,
+                    fontSize: "20px",
                 }}
             >
                 Benya Burnett Consultancy combines Edison award winning
@@ -17,7 +24,13 @@ const Content = () => {
                 internationally recognized excellence in circadian wellness and
                 epigenetic design expertise.
             </div>
-            <div style={{ margin: "30px 20px 0px 20px", fontWeight: 400 }}>
+            <div
+                style={{
+                    margin: "30px 20px 0px 20px",
+                    fontWeight: 400,
+                    fontSize: "20px",
+                }}
+            >
                 Offering expert and technical services in the following areas:
             </div>
             <ul

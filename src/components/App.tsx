@@ -20,7 +20,7 @@ const App = () => (
             style={{
                 display: "flex",
                 width: "96%",
-                minWidth: "1460px",
+                minWidth: "1360px",
                 position: "relative",
                 overflow: "auto",
                 minHeight: "800px",
