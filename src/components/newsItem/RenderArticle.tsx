@@ -8,10 +8,11 @@ interface IProps {
         title: string;
         date: string;
         text: string;
+        type: string;
     };
 }
 
-const getText = text => {
+const getText = (text) => {
     if (text.length > 400) {
         return text.slice(0, 400) + "...";
     }
@@ -24,7 +25,8 @@ const RenderArticle: React.SFC<IProps> = ({ article }) => {
             <div
                 style={{
                     display: "flex",
-                    margin: "20px 40px",
+                    margin:
+                        article.type === "leed-well" ? "20px 0px" : "20px 40px",
                 }}
             >
                 <img
