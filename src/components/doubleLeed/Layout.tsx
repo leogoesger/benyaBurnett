@@ -35,7 +35,7 @@ const Layout: React.SFC<IProps> = ({
     return (
         <MainContent>
             <ContentHeader>
-                World's first Double Platinum LEED and WELL
+                World first Double Platinum LEED and WELL
             </ContentHeader>
             <div style={{ padding: "40px" }}>
                 <Typography>

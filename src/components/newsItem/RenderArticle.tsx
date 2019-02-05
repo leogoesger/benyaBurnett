@@ -39,15 +39,16 @@ const RenderArticle: React.SFC<IProps> = ({ article }) => {
                 <div style={{ margin: "10px 20px", width: "450px" }}>
                     <h1 style={{ fontWeight: "bold" }}>
                         {article.title}
-                        <span
-                            style={{
-                                fontWeight: 200,
-                                fontSize: "12px",
-                                paddingLeft: "10px",
-                            }}
-                        >
-                            Posted on: {article.date.split("T")[0]}
-                        </span>
+                        <div>
+                            <span
+                                style={{
+                                    fontWeight: 200,
+                                    fontSize: "12px",
+                                }}
+                            >
+                                Posted on: {article.date.split("T")[0]}
+                            </span>
+                        </div>
                     </h1>
                     <p style={{ marginTop: "5px", lineHeight: "20px" }}>
                         {getText(article.text)}
