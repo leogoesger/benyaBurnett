@@ -12,14 +12,14 @@ interface IArticle {
     _id: string;
 }
 
-export const createArticle = async data => {
+export const createArticle = async (data) => {
     const token = localStorage.getItem("bbToken");
-
+    console.log(token);
     return axios
         .post(`${url}/articles/post`, data, {
             headers: { bbToken: token },
         })
-        .catch(e => localStorage.removeItem("bbToken"));
+        .catch((e) => localStorage.removeItem("bbToken"));
 };
 
 export const deleteArticle = async (articleId: string) => {
@@ -32,10 +32,10 @@ export const deleteArticle = async (articleId: string) => {
                 headers: { bbToken: token },
             }
         )
-        .catch(e => localStorage.removeItem("bbToken"));
+        .catch((e) => localStorage.removeItem("bbToken"));
 };
 
-export const updateArticle = async data => {
+export const updateArticle = async (data) => {
     const token = localStorage.getItem("bbToken");
 
     return axios
@@ -43,5 +43,5 @@ export const updateArticle = async data => {
             headers: { bbToken: token },
         })
         .then((article: any) => article)
-        .catch(e => localStorage.removeItem("bbToken"));
+        .catch((e) => localStorage.removeItem("bbToken"));
 };

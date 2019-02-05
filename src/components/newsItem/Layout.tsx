@@ -25,6 +25,11 @@ interface IProps {
     updateArticleHandler: (d: any) => (data: any) => void;
 }
 
+const RenderDiv = {
+    mainContent: MainContent,
+    divComp: "div",
+};
+
 const Layout: React.SFC<IProps> = ({
     articles,
     createArticleHandler,

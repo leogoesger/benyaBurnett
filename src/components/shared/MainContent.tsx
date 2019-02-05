@@ -5,7 +5,7 @@ interface IProps {
     children: React.ReactNode;
 }
 
-const Content: React.SFC<IProps> = props => {
+const Content: React.SFC<IProps> = (props) => {
     return (
         <div
             style={{

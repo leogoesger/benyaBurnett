@@ -10,7 +10,7 @@ import { NewsLayout } from "../components/news";
 import { AwardLayout } from "../components/awards";
 import { ProjectsLayout } from "../components/projects";
 import { ContactLayout } from "../components/contact";
-import { DoubleLeedLayout } from "../components/doubleLeed";
+import DoubleLeed from "../containers/DoubleLeed";
 import { TeamLayout } from "../components/team";
 import Footer from "./footer/Footer";
 
@@ -87,7 +87,7 @@ const App = () => (
                 <Route
                     exact
                     path="/double-platinum-leed-well"
-                    component={updateMetaTitle("Feature", DoubleLeedLayout)}
+                    component={updateMetaTitle("Feature", DoubleLeed)}
                 />
                 <Route
                     exact
